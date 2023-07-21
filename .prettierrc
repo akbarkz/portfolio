@@ -1,0 +1,16 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "quoteProps": "consistent",
+  "experimentalBabelParserPluginsList": [
+    "jsx",
+    "typescript"
+  ],
+  "importOrder": [
+    "^@(components|config|custom-types|pages|services)/?(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true
+}
