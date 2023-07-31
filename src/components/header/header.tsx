@@ -13,10 +13,24 @@ import { useTranslation } from 'react-i18next';
 
 import config from '@config/index';
 
-import { headerStyles } from './header.styles';
+import { headerStyles, headerOptionsStyles } from './header.styles';
+
+const HeaderOptions = () => {
+  const { t } = useTranslation();
+  return (
+    <div css={headerOptionsStyles}>
+      <Link href="/about">{t('about')}</Link>
+      <Link href="/projects">{t('projects')}</Link>
+      <Link href="/stack">{t('stack')}</Link>
+      <Link href="/education">{t('education')}</Link>
+      <Link href={config.urls.cv} download>
+        {t('cv')}
+      </Link>
+    </div>
+  );
+};
 
 const Header = () => {
-  const { t } = useTranslation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const openDrawer = useCallback(() => setIsDrawerOpen(true), []);
@@ -30,27 +44,26 @@ const Header = () => {
           <MenuOutlined className="sandwich-button" onClick={openDrawer} />
         </Col>
         <Col hidden lg={20}>
-          <Link href="/about">{t('about')}</Link> {t('projects')} {t('stack')} {t('education')}{' '}
-          <Link href={config.urls.cv} download>
-            {t('cv')}
-          </Link>
+          <HeaderOptions />
         </Col>
         <Col xs={12} sm={8} lg={4} className="links">
-          <Link href={config.urls.github} target="_blank" className="link-icon">
+          <Link href={config.urls.github} target="_blank" title="Github" className="link-icon">
             <GithubOutlined />
           </Link>
-          <Link href={config.urls.linkedIn} target="_blank" className="link-icon">
+          <Link href={config.urls.linkedIn} target="_blank" title="LinkedIn" className="link-icon">
             <LinkedinOutlined />
           </Link>
-          <Link href={config.urls.phone} target="_blank" className="link-icon">
+          <Link href={config.urls.phone} target="_blank" title="Whatsapp" className="link-icon">
             <WhatsAppOutlined className="link-icon" />
           </Link>
-          <Link href={config.urls.email} target="_blank" className="link-icon">
+          <Link href={config.urls.email} target="_blank" title="Email" className="link-icon">
             <MailOutlined className="link-icon" />
           </Link>
         </Col>
       </Row>
-      <Drawer placement="left" open={isDrawerOpen} onClose={closeDrawer} />
+      <Drawer placement="left" open={isDrawerOpen} onClose={closeDrawer}>
+        <HeaderOptions />
+      </Drawer>
     </AntHeader>
   );
 };

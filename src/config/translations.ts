@@ -12,6 +12,7 @@ const resources = {
       stack: 'Stack',
       education: 'Education',
       cv: 'CV',
+      noPage: 'Looks like the page you are trying to open does not exist.',
     },
   },
   [Language.KZ]: {
@@ -21,6 +22,7 @@ const resources = {
       stack: 'Стэк',
       education: 'Білім',
       cv: 'Резюме',
+      noPage: 'Сіз ашайын деп тұрған парақша жоқ сияқты.',
     },
   },
 };

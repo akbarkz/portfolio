@@ -17,12 +17,14 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
     "paths": {
+      "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@config/*": ["./src/config/*"],
       "@custom-types/*": ["./src/types/*"],
       "@pages/*": ["./src/pages/*"],
       "@services/*": ["./src/services/*"],
-      "@shared-types/*": ["./src/shared-types/*"]
+      "@shared-types/*": ["./src/shared-types/*"],
+      "@theme/*": ["./src/theme/*"]
     }
   },
   "include": ["./src/**/*"]

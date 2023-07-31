@@ -6,15 +6,18 @@ import { Footer } from '@components/footer';
 import { Header } from '@components/header';
 
 import router from './router';
+import { Theme } from './theme';
 
 const App = () => (
-  <Layout>
-    <Header />
-    <Content>
-      <RouterProvider router={router} />
-    </Content>
-    <Footer />
-  </Layout>
+  <Theme>
+    <Layout>
+      <Header />
+      <Content>
+        <RouterProvider router={router} />
+      </Content>
+      <Footer />
+    </Layout>
+  </Theme>
 );
 
 export { App };
