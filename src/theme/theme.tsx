@@ -4,20 +4,22 @@ import React from 'react';
 
 import { colors } from './colors';
 import { fontWeights, fontsSizes } from './fonts';
-import { IThemeProps } from './theme.types';
+import { spacing } from './spacing';
+import { ITheme, IThemeProps } from './theme.types';
 
 const { useBreakpoint } = Grid;
 
 const Theme = ({ children }: IThemeProps) => {
   const screens = useBreakpoint();
 
-  const theme = {
+  const theme: ITheme = {
     breakpoint: screens,
     color: colors,
     font: {
       size: fontsSizes,
       weight: fontWeights,
     },
+    spacing,
   };
 
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;

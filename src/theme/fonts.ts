@@ -7,7 +7,7 @@ export const fontsSizes = {
 };
 
 export const fontWeights = {
-  sm: 400,
-  md: 500,
-  lg: 700,
+  sm: '400',
+  md: '500',
+  lg: '700',
 };

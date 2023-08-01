@@ -19,11 +19,19 @@ const HeaderOptions = () => {
   const { t } = useTranslation();
   return (
     <div css={headerOptionsStyles}>
-      <Link href="/about">{t('about')}</Link>
-      <Link href="/projects">{t('projects')}</Link>
-      <Link href="/stack">{t('stack')}</Link>
-      <Link href="/education">{t('education')}</Link>
-      <Link href={config.urls.cv} download>
+      <Link className="page-link" href="/about">
+        {t('about')}
+      </Link>
+      <Link className="page-link" href="/projects">
+        {t('projects')}
+      </Link>
+      <Link className="page-link" href="/stack">
+        {t('stack')}
+      </Link>
+      <Link className="page-link" href="/education">
+        {t('education')}
+      </Link>
+      <Link className="page-link" href={config.urls.cv} download>
         {t('cv')}
       </Link>
     </div>
@@ -46,7 +54,7 @@ const Header = () => {
         <Col hidden lg={20}>
           <HeaderOptions />
         </Col>
-        <Col xs={12} sm={8} lg={4} className="links">
+        <Col xs={12} sm={8} lg={4} className="external-links">
           <Link href={config.urls.github} target="_blank" title="Github" className="link-icon">
             <GithubOutlined />
           </Link>

@@ -1,48 +1,51 @@
 import { css } from '@emotion/react';
 
-export const headerStyles = ({ breakpoint, font }) => css`
+import { ITheme } from '@theme/theme.types';
+
+export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => css`
   background-color: white;
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 24px;
-  padding-right: 24px;
+  color: ${color.text.primary};
+  font-size: ${font.size.lg};
+  font-weight: ${font.weight.md};
+  padding-left: ${spacing.lg};
+  padding-right: ${spacing.lg};
 
   ${breakpoint.md &&
   `
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: ${spacing.xxl};
+    padding-right: ${spacing.xxl};
   `}
 
   .sandwich-button {
     cursor: pointer;
+    font-size: ${font.size.lg};
   }
 
-  .links {
+  .external-links {
     text-align: right;
 
     .link-icon {
       font-size: ${font.size.lg};
-      margin-right: 12px;
+      margin-right: ${spacing.md};
 
       &:last-of-type {
         margin-right: 0;
       }
 
       svg {
-        fill: black;
+        fill: ${color.text.primary};
       }
 
       ${breakpoint.sm &&
       `
-        font-size: 24px;
-        margin-right: 16px;
+        font-size: ${font.size.xl};
+        margin-right: ${spacing.lg};
       `}
     }
   }
 `;
 
-export const headerOptionsStyles = ({ breakpoint, font }) => css`
+export const headerOptionsStyles = ({ breakpoint, font, spacing }: ITheme) => css`
   align-items: left;
   display: flex;
   flex-direction: column;
@@ -54,15 +57,15 @@ export const headerOptionsStyles = ({ breakpoint, font }) => css`
     flex-direction: row;
   `}
 
-  a {
+  .page-link {
     font-size: ${font.size.lg};
-    margin-bottom: 12px;
+    margin-bottom: ${spacing.md};
     margin-right: 0;
 
     ${breakpoint.md &&
     `
       margin-bottom: 0;
-      margin-right: 12px;
+      margin-right: ${spacing.md};
     `}
   }
 `;
