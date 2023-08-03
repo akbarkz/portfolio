@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Projects = () => <p>Projects</p>;
+const Projects = () => {
+  return <div></div>;
+};
 
 export { Projects };

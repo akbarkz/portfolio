@@ -18,13 +18,19 @@ export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => cs
 
   .sandwich-button {
     cursor: pointer;
+    color: ${color.text.primary};
     font-size: ${font.size.lg};
+
+    &:hover {
+      color: ${color.text.secondary};
+    }
   }
 
   .external-links {
     text-align: right;
 
     .link-icon {
+      color: ${color.text.primary};
       font-size: ${font.size.lg};
       margin-right: ${spacing.md};
 
@@ -32,8 +38,8 @@ export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => cs
         margin-right: 0;
       }
 
-      svg {
-        fill: ${color.text.primary};
+      &:hover {
+        color: ${color.text.secondary};
       }
 
       ${breakpoint.sm &&
@@ -45,7 +51,7 @@ export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => cs
   }
 `;
 
-export const headerOptionsStyles = ({ breakpoint, font, spacing }: ITheme) => css`
+export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme) => css`
   align-items: left;
   display: flex;
   flex-direction: column;
@@ -58,6 +64,7 @@ export const headerOptionsStyles = ({ breakpoint, font, spacing }: ITheme) => cs
   `}
 
   .page-link {
+    color: ${color.text.primary};
     font-size: ${font.size.lg};
     margin-bottom: ${spacing.md};
     margin-right: 0;
@@ -67,5 +74,22 @@ export const headerOptionsStyles = ({ breakpoint, font, spacing }: ITheme) => cs
       margin-bottom: 0;
       margin-right: ${spacing.md};
     `}
+
+    &:hover {
+      color: ${color.text.secondary};
+    }
+  }
+`;
+
+export const drawerHeaderStyles = {
+  padding: '28px 0 18px 16px',
+};
+
+export const closeIconStyles = ({ color, font }: ITheme) => css`
+  color: ${color.text.primary};
+  font-size: ${font.size.xl};
+
+  &:hover {
+    color: ${color.text.secondary};
   }
 `;
