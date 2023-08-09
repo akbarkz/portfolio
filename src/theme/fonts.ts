@@ -2,8 +2,9 @@ export const fontsSizes = {
   xs: '8px',
   sm: '10px',
   md: '12px',
-  lg: '18px',
-  xl: '24px',
+  lg: '14px',
+  xl: '18px',
+  xxl: '24px',
 };
 
 export const fontWeights = {

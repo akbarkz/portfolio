@@ -14,39 +14,15 @@ import { useTranslation } from 'react-i18next';
 
 import config from '@config/index';
 
-import {
-  closeIconStyles,
-  drawerHeaderStyles,
-  headerStyles,
-  headerOptionsStyles,
-} from './header.styles';
-
-const HeaderOptions = () => {
-  const { t } = useTranslation();
-  return (
-    <div css={headerOptionsStyles}>
-      <Link className="page-link" href="/about">
-        {t('about')}
-      </Link>
-      <Link className="page-link" href="/projects">
-        {t('projects')}
-      </Link>
-      <Link className="page-link" href="/stack">
-        {t('stack')}
-      </Link>
-      <Link className="page-link" href="/education">
-        {t('education')}
-      </Link>
-      <Link className="page-link" href={config.urls.cv} download>
-        {t('cv')}
-      </Link>
-    </div>
-  );
-};
+import { HeaderOptions } from './components/header-options';
+import { Logo } from './components/logo';
+import { closeIconStyles, drawerHeaderStyles, headerStyles } from './header.styles';
 
 const CloseIcon = () => <CloseOutlined css={closeIconStyles} />;
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const openDrawer = useCallback(() => setIsDrawerOpen(true), []);
@@ -60,7 +36,10 @@ const Header = () => {
           <Col xs={12} sm={16} md={0}>
             <MenuOutlined className="sandwich-button" onClick={openDrawer} />
           </Col>
-          <Col hidden md={16}>
+          <Col className="logo" hidden md={2}>
+            <Logo />
+          </Col>
+          <Col hidden md={14}>
             <HeaderOptions />
           </Col>
           <Col xs={12} sm={8} className="external-links">
@@ -90,6 +69,7 @@ const Header = () => {
         placement="left"
         open={isDrawerOpen}
         onClose={closeDrawer}
+        extra={<Logo closeDrawer={closeDrawer} />}
       >
         <HeaderOptions />
       </Drawer>

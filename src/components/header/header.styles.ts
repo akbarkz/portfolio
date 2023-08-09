@@ -10,6 +10,16 @@ export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => cs
   padding-left: ${spacing.lg};
   padding-right: ${spacing.lg};
 
+  .logo {
+    display: none;
+
+    ${breakpoint.md &&
+    `
+      align-items: center;
+      display: flex;
+    `}
+  }
+
   ${breakpoint.md &&
   `
     padding-left: ${spacing.xxl};
@@ -51,38 +61,8 @@ export const headerStyles = ({ breakpoint, color, font, spacing }: ITheme) => cs
   }
 `;
 
-export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme) => css`
-  align-items: left;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  ${breakpoint.md &&
-  `
-    align-items: center;
-    flex-direction: row;
-  `}
-
-  .page-link {
-    color: ${color.text.primary};
-    font-size: ${font.size.lg};
-    margin-bottom: ${spacing.md};
-    margin-right: 0;
-
-    ${breakpoint.md &&
-    `
-      margin-bottom: 0;
-      margin-right: ${spacing.md};
-    `}
-
-    &:hover {
-      color: ${color.text.secondary};
-    }
-  }
-`;
-
 export const drawerHeaderStyles = {
-  padding: '28px 0 18px 16px',
+  padding: '18px 20px 10px 16px',
 };
 
 export const closeIconStyles = ({ color, font }: ITheme) => css`
