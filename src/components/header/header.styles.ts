@@ -12,6 +12,8 @@ export const headerStyles =
       color: ${color.text.primary};
       font-size: ${font.size.lg};
       font-weight: ${font.weight.md};
+      height: 40px;
+      line-height: 40px;
       padding-left: ${spacing.lg};
       padding-right: ${spacing.lg};
       position: sticky;
@@ -21,7 +23,14 @@ export const headerStyles =
 
       ${scrollDirection === Direction.DOWN &&
       `
-        top: -64px;
+        top: -40px;
+
+        ${
+          breakpoint.md &&
+          `
+          top: -64px;
+        `
+        }
       `}
 
       .logo {
@@ -36,6 +45,8 @@ export const headerStyles =
 
       ${breakpoint.md &&
       `
+        height: 64px;
+        line-height: 64px;
         padding-left: ${spacing.xxl};
         padding-right: ${spacing.xxl};
       `}
@@ -76,7 +87,7 @@ export const headerStyles =
     `;
 
 export const drawerHeaderStyles = {
-  padding: '18px 20px 10px 16px',
+  padding: '4px 20px 0 16px',
 };
 
 export const closeIconStyles = ({ color, font }: ITheme) => css`

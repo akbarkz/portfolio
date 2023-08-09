@@ -37,10 +37,10 @@ const Header = () => {
           <Col className="logo" hidden md={2}>
             <Logo />
           </Col>
-          <Col hidden md={14}>
+          <Col hidden md={15}>
             <HeaderOptions />
           </Col>
-          <Col xs={12} sm={8} className="external-links">
+          <Col xs={12} sm={7} className="external-links">
             <Link href={config.urls.github} target="_blank" title="Github" className="link-icon">
               <GithubOutlined />
             </Link>

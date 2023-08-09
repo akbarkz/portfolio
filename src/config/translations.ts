@@ -63,6 +63,18 @@ const resources = {
           p3: 'Resolved the issue of a slow legacy API by introducing a Node middleware BFF (Backend For Frontend) that efficiently served GraphQL queries.',
         },
       },
+      main: {
+        greeting: 'Hi there!',
+        welcome: 'Welcome to my portfolio website!',
+        text: {
+          p1: "I'm Akbar Abdrakhmanov, a seasoned software engineer hailing from the picturesque city of Almaty, Kazakhstan. With a passion for crafting exceptional digital experiences, I've spent years honing my skills in the realm of web development, specializing in the art of frontend technologies.",
+          p2: "My journey through the ever-evolving landscape of software engineering has seen me flourish on the frontend frontier, where I've become a master of React, Vue, and the intricate dance of JavaScript and TypeScript. But my expertise doesn't stop there – I've ventured into the realms of backend development, databases, and the intricate world of CI/CD.",
+          p3: "As a remote contractor, I've had the privilege of collaborating with diverse teams and clients from around the globe, bringing innovation and efficiency to every project I touch. Whether it's creating captivating user interfaces or architecting robust backend systems, I thrive on transforming ideas into tangible digital realities.",
+          p4: 'This portfolio is a window into my world of code, a curated collection of my endeavors that showcases the depth and breadth of my expertise. From personal projects that showcase my creative flair to professional collaborations that demonstrate my technical prowess, I invite you to explore the tapestry of my work.',
+          p5: "Feel free to reach out if you'd like to connect, collaborate, or simply chat about the exciting possibilities of software engineering. Thank you for visiting, and I hope you enjoy your journey through my digital domain.",
+          p6: 'The source code for this website is open source and available on my GitHub account, so feel free to take a look!',
+        },
+      },
     },
   },
   [Language.KZ]: {
