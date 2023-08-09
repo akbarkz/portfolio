@@ -1,4 +1,6 @@
-export const spacing = {
+import { IUniversalStyle } from './theme.types';
+
+export const spacing: IUniversalStyle = {
   xs: '4px',
   sm: '8px',
   md: '12px',

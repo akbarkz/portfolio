@@ -29,5 +29,9 @@ export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme
     &:hover {
       color: ${color.text.secondary};
     }
+
+    &.active {
+      color: ${color.text.highlighted};
+    }
   }
 `;

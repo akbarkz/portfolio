@@ -12,14 +12,15 @@ interface IBreakpoint {
   xl?: boolean;
 }
 
-interface IColor {
+export interface IColor {
   text: {
     primary: string;
     secondary: string;
+    highlighted: string;
   };
 }
 
-interface IUniversalStyle {
+export interface IUniversalStyle {
   xs?: string;
   sm: string;
   md: string;
@@ -28,7 +29,7 @@ interface IUniversalStyle {
   xxl?: string;
 }
 
-interface IFont {
+export interface IFont {
   size: IUniversalStyle;
   weight: IUniversalStyle;
 }

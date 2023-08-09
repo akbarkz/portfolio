@@ -1,4 +1,6 @@
-export const fontsSizes = {
+import { IFont } from './theme.types';
+
+export const fontsSizes: IFont['size'] = {
   xs: '8px',
   sm: '10px',
   md: '12px',
@@ -7,7 +9,7 @@ export const fontsSizes = {
   xxl: '24px',
 };
 
-export const fontWeights = {
+export const fontWeights: IFont['weight'] = {
   sm: '400',
   md: '500',
   lg: '700',
