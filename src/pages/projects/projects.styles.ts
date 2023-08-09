@@ -45,6 +45,7 @@ export const projectStyles =
       .stack {
         align-items: center;
         display: flex;
+        flex-wrap: wrap;
 
         &-tech {
           margin-left: ${spacing.sm};

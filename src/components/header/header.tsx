@@ -10,18 +10,16 @@ import { Col, Drawer, Row } from 'antd';
 import { Header as AntHeader } from 'antd/es/layout/layout';
 import Link from 'antd/es/typography/Link';
 import React, { useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import config from '@config/index';
 
 import { HeaderOptions } from './components/header-options';
 import { Logo } from './components/logo';
+import { useStickyHeader } from './header.hooks';
 import { closeIconStyles, drawerHeaderStyles, headerStyles } from './header.styles';
 
-const CloseIcon = () => <CloseOutlined css={closeIconStyles} />;
-
 const Header = () => {
-  const { t } = useTranslation();
+  const scrollDirection = useStickyHeader();
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -31,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <AntHeader css={headerStyles}>
+      <AntHeader css={headerStyles(scrollDirection)}>
         <Row>
           <Col xs={12} sm={16} md={0}>
             <MenuOutlined className="sandwich-button" onClick={openDrawer} />
@@ -64,7 +62,7 @@ const Header = () => {
         </Row>
       </AntHeader>
       <Drawer
-        closeIcon={<CloseIcon />}
+        closeIcon={<CloseOutlined css={closeIconStyles} />}
         headerStyle={drawerHeaderStyles}
         placement="left"
         open={isDrawerOpen}
