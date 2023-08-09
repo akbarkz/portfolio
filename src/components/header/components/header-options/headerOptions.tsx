@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import config from '@config/index';
+import { routes } from '@router';
 
 import { headerOptionsStyles } from './headerOptions.styles';
 
@@ -11,16 +12,16 @@ const HeaderOptions = () => {
 
   return (
     <div css={headerOptionsStyles}>
-      <Link className="page-link" href="/about">
+      <Link className="page-link" href={routes.about.path}>
         {t('about')}
       </Link>
-      <Link className="page-link" href="/projects">
+      <Link className="page-link" href={routes.projects.path}>
         {t('projects')}
       </Link>
-      <Link className="page-link" href="/stack">
+      <Link className="page-link" href={routes.stack.path}>
         {t('stack')}
       </Link>
-      <Link className="page-link" href="/education">
+      <Link className="page-link" href={routes.education.path}>
         {t('education')}
       </Link>
       <Link className="page-link" href={config.urls.cv} download>

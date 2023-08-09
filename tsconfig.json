@@ -22,6 +22,7 @@
       "@config/*": ["./src/config/*"],
       "@custom-types/*": ["./src/types/*"],
       "@pages/*": ["./src/pages/*"],
+      "@router": ["./src/router.tsx"],
       "@services/*": ["./src/services/*"],
       "@shared-types/*": ["./src/shared-types/*"],
       "@theme/*": ["./src/theme/*"]

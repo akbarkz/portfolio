@@ -9,7 +9,7 @@
     "typescript"
   ],
   "importOrder": [
-    "^@(assets|components|config|custom-types|pages|services|theme)/?(.*)$",
+    "^@(assets|components|config|custom-types|pages|router|services|theme)/?(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true

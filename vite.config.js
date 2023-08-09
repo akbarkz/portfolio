@@ -28,6 +28,7 @@ export default defineConfig({
       '@config': path.resolve(__dirname, './src/config'),
       '@custom-types': path.resolve(__dirname, './src/types'),
       '@pages': path.resolve(__dirname, './src/pages'),
+      '@router': path.resolve(__dirname, './src/router.tsx'),
       '@services': path.resolve(__dirname, './src/services'),
       '@shared-types': path.resolve(__dirname, './src/shared-types'),
       '@theme': path.resolve(__dirname, './src/theme'),

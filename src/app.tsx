@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Layout } from '@components/layout';
+import { routes } from '@router';
 
 import { appStyles } from './app.styles';
-import routes from './router';
 import { Theme } from './theme';
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
-            {routes.map((route) => (
+            {Object.values(routes).map((route) => (
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
           </Route>
