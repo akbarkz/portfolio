@@ -5,10 +5,14 @@ import { Outlet } from 'react-router-dom';
 import { Footer } from '@components/footer';
 import { Header } from '@components/header';
 
+import { contentStyles } from './layout.styles';
+
 const Layout = () => (
   <AntLayout>
     <Header />
-    <Outlet />
+    <div css={contentStyles}>
+      <Outlet />
+    </div>
     <Footer />
   </AntLayout>
 );

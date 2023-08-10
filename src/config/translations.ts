@@ -14,6 +14,7 @@ const resources = {
       cv: 'CV',
       noPage: 'Looks like the page you are trying to open does not exist.',
       home: 'Back to Home page',
+      underDevelopment: 'This page is currently under development...',
       position: {
         seniorLead: 'Senior Frontend Developer / Team Lead',
         senior: 'Senior Frontend Developer',
@@ -86,6 +87,7 @@ const resources = {
       cv: 'Резюме',
       noPage: 'Сіз ашайын деп тұрған парақша жоқ сияқты.',
       home: 'Бастапқы парақшаға қайтып оралу',
+      underDevelopment: 'Бұл парақша әлі әзірленуде...',
       position: {
         seniorLead: 'Аға фронтэнд әзірлеуші / Жетекші',
         senior: 'Аға фронтэнд әзірлеуші',
