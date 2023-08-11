@@ -1,4 +1,4 @@
-import AntLayout, { Content } from 'antd/es/layout/layout';
+import AntLayout from 'antd/es/layout/layout';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 

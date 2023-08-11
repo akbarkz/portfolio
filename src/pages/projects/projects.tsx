@@ -37,7 +37,7 @@ const Projects = () => {
             {formatDate(project.dateEnd, i18n.language)}
           </div>
           <div className="link">
-            <a href={project.link} target="_blank">
+            <a href={project.link} rel="noreferrer" target="_blank">
               {project.link}
             </a>
           </div>
@@ -48,6 +48,7 @@ const Projects = () => {
                 className="stack-tech"
                 key={`${project.name}-${tech.name}`}
                 href={tech.link}
+                rel="noreferrer"
                 target="_blank"
               >
                 <img alt={tech.name} src={tech.icon} title={tech.name} width={24} />
@@ -78,6 +79,7 @@ const Projects = () => {
               <Carousel autoplay className="carousel">
                 {project.images.map((image) => (
                   <img
+                    alt="Project screenshot"
                     className="carousel-image"
                     key={image}
                     src={image}

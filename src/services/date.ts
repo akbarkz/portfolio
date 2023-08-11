@@ -1,5 +1,4 @@
 import { Language } from '@shared-types/index';
-import i18n from 'i18next';
 
 export const formatDate = (dateStr: string, language?: string): string => {
   const locale = language === Language.KZ ? 'kk-KZ' : 'default';
