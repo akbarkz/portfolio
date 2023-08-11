@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  publicDir: 'public',
   esbuild: {
     jsxInject: `import { jsx as _jsx } from 'react/jsx-runtime'`,
   },
@@ -21,6 +22,9 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    port: 3000,
+  },
   resolve: {
     alias: {
       '@assets': path.resolve(__dirname, './src/assets'),
