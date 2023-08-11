@@ -1,6 +1,6 @@
 import { Language } from '@shared-types/index';
 
-export default {
+const config = {
   urls: {
     github: 'https://github.com/akbarkz',
     linkedIn: 'https://www.linkedin.com/in/akbarkz/',
@@ -11,3 +11,5 @@ export default {
   },
   defaultLanguage: Language.EN,
 };
+
+export default config;

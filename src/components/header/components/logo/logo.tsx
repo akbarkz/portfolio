@@ -18,6 +18,7 @@ const Logo = ({ closeDrawer }: ILogo) => {
 
   return (
     <img
+      alt="Website logo"
       css={logoStyles}
       src={config.urls.logo}
       title={t('home')}

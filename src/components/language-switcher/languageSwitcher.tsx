@@ -1,5 +1,5 @@
 import { Language } from '@shared-types/index';
-import { Select, MenuProps } from 'antd';
+import { Select } from 'antd';
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
