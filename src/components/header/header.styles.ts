@@ -12,8 +12,8 @@ export const headerStyles =
       color: ${color.text.primary};
       font-size: ${font.size.lg};
       font-weight: ${font.weight.md};
-      height: 40px;
-      line-height: 40px;
+      height: 50px;
+      line-height: 50px;
       padding-left: ${spacing.lg};
       padding-right: ${spacing.lg};
       position: sticky;
@@ -23,7 +23,7 @@ export const headerStyles =
 
       ${scrollDirection === Direction.DOWN &&
       `
-        top: -40px;
+        top: -50px;
 
         ${
           breakpoint.md &&
@@ -66,7 +66,7 @@ export const headerStyles =
 
         .link-icon {
           color: ${color.text.primary};
-          font-size: ${font.size.lg};
+          font-size: ${font.size.xl};
           margin-right: ${spacing.md};
 
           &:last-of-type {
