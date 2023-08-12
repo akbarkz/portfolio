@@ -23,6 +23,7 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-config-react-app": "7.0.1",
     "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
     "prettier": "2.8.8",
     "typescript": "5.1.3",
     "vite": "4.3.9"
@@ -30,6 +31,8 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'"
+    "compile": "tsc",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "prepare": "husky install"
   }
 }
