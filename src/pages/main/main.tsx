@@ -13,9 +13,6 @@ const Main = () => {
       <p>{t('main.text.p1')}</p>
       <p>{t('main.text.p2')}</p>
       <p>{t('main.text.p3')}</p>
-      <p>{t('main.text.p4')}</p>
-      <p>{t('main.text.p5')}</p>
-      <p>{t('main.text.p6')}</p>
     </div>
   );
 };
