@@ -125,6 +125,7 @@ export const projects: IProject[] = [
     ],
     location: 'Open Source on Github',
     link: 'https://vuestorefront.io/',
+    description: ['description.vueStorefront.p1', 'description.vueStorefront.p2'],
   },
   {
     name: 'Infit-IT Solutions',
@@ -143,6 +144,8 @@ export const projects: IProject[] = [
     ],
     location: 'location.kz',
     link: 'https://infin-it.kz/',
+    description: ['description.infitIt.p1'],
+    achievements: ['achievements.infinIt.p1', 'achievements.infinIt.p2', 'achievements.infinIt.p3'],
   },
   {
     name: 'Kaspi Bank',
@@ -161,5 +164,7 @@ export const projects: IProject[] = [
     ],
     location: 'location.kz',
     link: 'https://kaspi.kz/',
+    description: ['description.kaspi.p1'],
+    achievements: ['achievements.kaspi.p1', 'achievements.kaspi.p2', 'achievements.kaspi.p3'],
   },
 ];
