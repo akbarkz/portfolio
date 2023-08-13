@@ -46,6 +46,16 @@ const resources = {
           p2: 'My goal at Jumbo was to refactor an existing legacy web store application using the Vue stack. My experience there was so successful that Jumbo hired many more developers from Frontmen shortly after.',
           p3: "The Jumbo headquarters, where I commuted every day, was located in a small town called Veghel, which was near Eindhoven, the larger city where I lived. After working at Jumbo for over a year, I made the decision to switch projects and relocate to Amsterdam. Fortunately, this transition was feasible due to Frontmen's nature as a consultancy company. Alongside the project change, I also aimed to transition stacks, specifically looking for a React project. However, when I was ready to make the switch, I encountered an unfortunate situation: there were no available projects matching my criteria. As a result, I found myself on the 'bench', which did not particularly appeal to me. Ultimately, this was the primary reason for my decision to leave the company.",
         },
+        vueStorefront: {
+          p1: "Vue Storefront, an open-source e-commerce solution, currently boasts over 10 thousand GitHub stars. I had the privilege of becoming a core contributor to this project during its early stages. The project's primary goal was to develop a Progressive Web Application (PWA) utilizing Vue on the frontend. It served as a view layer for various e-commerce platforms such as Magento, alongside a backend middleware built with Node. My contributions extended to both the Vue and Node applications.",
+          p2: 'During my time at Vue Storefront, I had the opportunity to collaborate with exceptional individuals who were, and still are, outstanding software engineers. Their expertise greatly influenced my growth, not only within my home country but on a global scale, contributing to the advancement of my career.',
+        },
+        infitIt: {
+          p1: 'Played a pivotal role in the development of a versatile Internet Banking solution, which subsequently found its way into multiple premier banks across Kazakhstan. Shortly after joining the company, my contributions were swiftly recognized, leading to a well-deserved promotion to the position of Frontend Team Lead. In this capacity, I successfully guided and managed a dedicated team of four frontend developers, steering our collective efforts toward the creation of innovative and user-centric banking solutions.',
+        },
+        kaspi: {
+          p1: "During my tenure at Kaspi Bank, an institution renowned for its exceptional innovation and prominent recognition in Kazakhstan, I was actively involved in a pivotal project. This project was geared towards the development of a user-friendly and efficient solution, designed to enable seamless discovery of various places and points of interest. The endeavor aligned perfectly with the bank's reputation for pioneering initiatives that cater to the evolving needs of its clientele.",
+        },
       },
       achievements: {
         title: 'Some of my achievements',
@@ -63,6 +73,16 @@ const resources = {
           p1: 'Successfully eliminated a substantial amount of unmaintainable legacy code and replaced it with a Vue.js application.',
           p2: 'Enhanced the code quality by establishing a component library, implementing unit tests, and creating Storybook stories.',
           p3: 'Resolved the issue of a slow legacy API by introducing a Node middleware BFF (Backend For Frontend) that efficiently served GraphQL queries.',
+        },
+        infinIt: {
+          p1: 'Spearheaded the formulation of a robust architecture that enabled seamless support for multiple banks through a unified application. This visionary approach laid the groundwork for efficient multi-bank integration, reducing development complexity and enhancing overall scalability.',
+          p2: 'Successfully partitioned a substantial monolithic React application into discrete repositories. This strategic initiative not only simplified maintenance but also facilitated independent development, enabling more streamlined updates and improved codebase manageability.',
+          p3: "Uplifted code quality by introducing cutting-edge technologies such as TypeScript and Sass. By embracing these advanced tools, I bolstered the application's reliability and maintainability. Additionally, the adoption of modular components streamlined development processes and enhanced code reusability.",
+        },
+        kaspi: {
+          p1: "Played a pivotal role in shaping the overarching architecture of the solution. Through strategic planning and meticulous design, I contributed to establishing a strong and coherent foundation that supported the project's objectives.",
+          p2: "Successfully executed data gathering from diverse online sources, encompassing a wide spectrum of geospatial information, including addresses, administrative boundaries, and points of interest. This comprehensive data aggregation enhanced the solution's depth and utility.",
+          p3: 'Spearheaded the development of a cutting-edge mobile application employing React Native and Django. This innovative application facilitated the seamless recording and storage of GPS coordinates for various objects, both online and offline. The offline functionality enabled data collection even in regions with limited or no internet connectivity, thereby enriching the geolocation dataset.',
         },
       },
       main: {
@@ -122,6 +142,16 @@ const resources = {
           p2: 'Jumbo-дағы негізгі мақсатым Vue стэкті қолданып, сондағы бар ескі онлайн дүкен қолданбасын өзгерту болатын. Менің ол жерде істеген жұмысымның сәтті болғаны соншалық, айтарлықтай қысқа мерзімнің ішінде Jumbo Frontmen-нен әлдеқайда көбірек әзірлеушілерді жұмысқа алатын болды.',
           p3: 'Мен күнделікті қатынаған Jumbo-ның бас кеңсесі кішігірім Veghel атты қалашықта орналасқан-тұғын, ал мен соның қасындағы үлкенірек Eindhoven қаласында тұрдым. Jumbo-да бір жылдан астам уақыт жұмыс істеген соң, мен жобаны ауыстырып, Амстердамға көшуге бел будым. Қуанышқа орай, бұл өзгеріс Frontmen-нің кеңесшілік табиғатына орай мүмкін болды. Тек жобаны ғана ауыстырып қоймай, сонымен қатар стэкті де ауыстырғым келді, нақтырақ айтқанда React-пен жұмыс істеуді қаладым. Алайда, ауысуға келгенде, қол жетімді жобалар табылмай қалды. Нәтижесінде мен күту тізіміне түсіп қалдым, бұл мен үшін күтпеген жағдай болды. Ақыр аяғында, бұл компаниядан кетудің басты себебі болды.',
         },
+        vueStorefront: {
+          p1: 'Ашық қолжетімді электрондық коммерция шешімі болып табылатын Vue Storefront-тың қазіргі таңда 10 мыңнан астам Github жұлдызы бар. Мен бұл жобаға ерте кезеңінде қосулуыма жолым болды. Жобаның негізгі мақсаты фронтэндта Vue қолданып, алдыңғы қатарлы вэб қолданбасын (PWA) әзірлеу еді. Ол Magento сияқты әртүрлі электрондық коммерция платформары үшін көрсету қабатын, және оған қоса Node арқылы жазылған бэкенд аралық бағдарламасын ұсынды. Мен Vue және Node қолданбаларының екеуінің де дамуына үлесімді қостым.',
+          p2: 'Vue Storefront жобасымен жұмыс істеген кезімде, өз ісінің білікті мамандары болып табылатын бірқатар адамдармен әріптес болуыма сәті түсті. Олардың құзыреті менің тек туған елімнің аумағында емес, сонымен қатар дүниежүзілік ауқымда маман ретінде өсуіме үлкен септігін тигізді.',
+        },
+        infitIt: {
+          p1: 'Күллі Қазақстан аумағындағы бірнеше озық банктерге жолын тапқан әмбебап интернет банкинг өнімін әзірлеуде негізгі рөл атқардым. Мекемеге кіргеннен соң аз уақытта жетістіктерім көзге түсіп, фронтэнд жетекшісі лауазымына лайықты түрде тағайындалдым. Бұл рөлде төрт фронтэнд әзірлеушілерден құралған топты басқарып, инновациялық және клиентке бағдарланған банкинг өнімдерін жасаудағы бірлескен жұмысты жүргіздім.',
+        },
+        kaspi: {
+          p1: 'Өзінің айрықша инновациялары мен Қазақстандағы біртуар танымалдығымен ерекшеленетін Kaspi Bank мекемесінде жұмыс істегенімде, мен маңызды жобаға белсенді ат салыстым. Бұл жоба әр түрлі орындар мен көрнекі жерлерді бөгетсіз табуға арналған ыңғайлы және тиімді шешім еді. Бұл бастама банктің клиенттерінің өсіп келе жатқан қажеттіліктерін қанағаттандыруына бағытталған инновациялық кәсіпкер ретіндегі беделіне әбден сәйкес келетін.',
+        },
       },
       achievements: {
         title: 'Кейбір жетістектерім',
@@ -139,6 +169,16 @@ const resources = {
           p1: 'Қолдау көрсетуді қиындатқан ескі кодтың біразын Vue.js қолданбасымен сәтті ауыстырып өзгерттім.',
           p2: 'Код сапасын компоненттер кітапханасын құру, модульдік тестілерді және Storybook хикаяларын құрастыру арқылы жақсарттым.',
           p3: 'Ескі баяу API мәселесін тиімді GraphQL сұратымдарын қамтамасыз еткен Node аралық бағдарламасын (фронтэнд үшін арналған бэкэнд) әзірлеу арқылы шештім.',
+        },
+        infinIt: {
+          p1: 'Бірыңғайланған қолданба арқылы бірнеше банктерді бөгелмей қолдауды қамтамасыз ететін берік архитектураны әзірлеуді басқардым.',
+          p2: 'Күрделі монолиттік React қолданбаны бірнеше репозиторийлерге сәтті түрде бөлдім. Бұл стратегиялық бастама тек қызмет көрсетуді ғана оңайлатпай, сонымен қатар жаңарту үрдістерін жеңілдететін және кодты басқаруды жақсартатын тәуелсіз әзірлеуді қамтамасыз етті.',
+          p3: 'Typescript пен Sass сықылды үздік технологияларды ендіру арқылы кодтың сапасын жақсарттым. Осы арқылы қолданбаның сенімділігі мен қызмет көрсетілімдігін көтердім. ',
+        },
+        kaspi: {
+          p1: 'Өнімнің жан-жақты архитектурасын құруда түйінді рөл атқардым. Стратегиялық жоспарлау мен мұқият жобалау арқылы жобаның мақсатына жетуіне көмектесетін берік әрі жүйелі негіз қалыптастыруға ат салыстым.',
+          p2: 'Мекен-жайлар, әкімшілік шекаралар мен қызығу нүктелерін қосқандағы кең ауқымды геокеңістікті ақпаратты қамтитын деректерді алуан түрлі онлайн дереккөздерінен сәтті түрде жинадым. Бұл деректерді кешенді біріктіру өнімнің ауқымдылығы мен пайдалылығын ұлғайтты.',
+          p3: 'React Native пен Django көмегімен алдыңғы қатарлы мобилді қолданбаны әзірледім. Бұл инновациялық қолданба әр түрлі объекттердің GPS-координаттарын онлайн да, офлайн форматында да бөгетсіз жинау және сақтауды оңайлатты. Автономды функционалдылық деректерді интернеті шектеулі немесе жоқ болған аймақтарда да жинауды қамтамасыз етті, соның нәтижесінде геолокация деректерінің жинағын байытты.',
         },
       },
       main: {
