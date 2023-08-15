@@ -8,9 +8,9 @@ const About = () => {
 
   return (
     <div css={wrapperStyles}>
-      <p>{t('aboutText.p1')}</p>
-      <p>{t('aboutText.p2')}</p>
-      <p>{t('aboutText.p3')}</p>
+      <p>{t('about.p1')}</p>
+      <p>{t('about.p2')}</p>
+      <p>{t('about.p3')}</p>
     </div>
   );
 };

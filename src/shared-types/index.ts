@@ -21,3 +21,17 @@ export interface IProject {
   link: string;
   images?: string[];
 }
+
+export interface IEducation {
+  universityName: string;
+  dateStart: string;
+  dateEnd: string;
+  link: string;
+  logo: string;
+  thesisLink?: string;
+  thesisName?: string;
+  specialty: string;
+  description: string[];
+  location: string;
+  degree: string;
+}

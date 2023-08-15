@@ -1,4 +1,5 @@
 import { Carousel } from 'antd';
+import Link from 'antd/es/typography/Link';
 import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Lightbox } from 'react-modal-image';
@@ -29,22 +30,22 @@ const Projects = () => {
       {projects.map((project, index) => (
         <div css={projectStyles(index)} key={`${project.name}-${project.dateStart.toString()}`}>
           <div className="name">
-            {project.name}&nbsp;<div className="location">({t(project.location)})</div>
+            {project.name}&nbsp;<span className="location">({t(project.location)})</span>
           </div>
           <div className="position">{t(project.position)}</div>
           <div className="dates">
-            {formatDate(project.dateStart, i18n.language)} -{' '}
-            {formatDate(project.dateEnd, i18n.language)}
+            {`${formatDate(project.dateStart, i18n.language)} -
+            ${formatDate(project.dateEnd, i18n.language)}`}
           </div>
           <div className="link">
-            <a href={project.link} rel="noreferrer" target="_blank">
+            <Link href={project.link} rel="noreferrer" target="_blank">
               {project.link}
-            </a>
+            </Link>
           </div>
           <div className="stack">
             {t('stack')}:
             {project.stack.map((tech) => (
-              <a
+              <Link
                 className="stack-tech"
                 key={`${project.name}-${tech.name}`}
                 href={tech.link}
@@ -52,7 +53,7 @@ const Projects = () => {
                 target="_blank"
               >
                 <img alt={tech.name} src={tech.icon} title={tech.name} width={24} />
-              </a>
+              </Link>
             ))}
           </div>
           <div className="project-details">

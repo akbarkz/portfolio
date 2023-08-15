@@ -1,0 +1,46 @@
+import { IEducation } from '@shared-types/index';
+
+export const education: IEducation[] = [
+  {
+    universityName: 'McMaster University',
+    location: 'location.ca',
+    dateStart: '2009-09-01',
+    dateEnd: '2011-05-31',
+    degree: 'education.degree.masc',
+    specialty: 'education.specialty.se',
+    link: 'https://www.mcmaster.ca/',
+    logo: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1692076809/portfolio/university_logos/mcmaster_pgavlm.png',
+    thesisName: 'education.thesis.mcmaster',
+    thesisLink: 'https://macsphere.mcmaster.ca/bitstream/11375/9892/1/fulltext.pdf',
+    description: [
+      'education.description.mcmaster.p1',
+      'education.description.mcmaster.p2',
+      'education.description.mcmaster.p3',
+      'education.description.mcmaster.p4',
+    ],
+  },
+  {
+    universityName: 'Narxoz University',
+    location: 'location.kz',
+    dateStart: '2006-09-01',
+    dateEnd: '2008-05-31',
+    degree: 'education.degree.bachelor',
+    specialty: 'education.specialty.finance',
+    link: 'https://narxoz.edu.kz/',
+    logo: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1692076809/portfolio/university_logos/narxoz_hieupw.png',
+    thesisName: 'education.thesis.narxoz',
+    description: ['education.description.narxoz.p1'],
+  },
+  {
+    universityName: 'Satbayev University',
+    location: 'location.kz',
+    dateStart: '2001-09-01',
+    dateEnd: '2006-05-31',
+    degree: 'education.degree.specialist',
+    specialty: 'education.specialty.is',
+    link: 'https://satbayev.university/',
+    logo: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1692076809/portfolio/university_logos/satbayev_myxvcj.png',
+    thesisName: 'education.thesis.satbayev',
+    description: ['education.description.satbayev.p1', 'education.description.satbayev.p2'],
+  },
+];
