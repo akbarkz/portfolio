@@ -103,6 +103,7 @@ export const projectStyles =
           }
 
           &-image {
+            cursor: pointer;
             max-height: 100%;
             max-width: 100%;
           }
