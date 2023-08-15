@@ -16,14 +16,16 @@ export const globalStyles = ({ color }: ITheme) => css`
     font-family: sans-serif;
 
     a {
-      color: ${color.text.primary} !important;
+      &:not(:visited) {
+        color: ${color.text.primary} !important;
+      }
 
       &:hover {
-        color: ${color.text.highlighted} !important;
+        color: ${color.text.secondary} !important;
       }
 
       &:visited {
-        color: ${color.text.secondary};
+        color: initial;
       }
     }
   }
