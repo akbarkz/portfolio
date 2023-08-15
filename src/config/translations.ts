@@ -7,10 +7,8 @@ import config from '.';
 const resources = {
   [Language.EN]: {
     translation: {
-      about: 'About',
       projects: 'Projects',
       stack: 'Stack',
-      education: 'Education',
       cv: 'CV',
       noPage: 'Looks like the page you are trying to open does not exist.',
       home: 'Back to Home page',
@@ -27,6 +25,7 @@ const resources = {
         ams: 'Amsterdam, Netherlands',
         ein: 'Eindhoven, Netherlands',
         kz: 'Almaty, Kazakhstan',
+        ca: 'Hamilton, Canada',
       },
       description: {
         athenian: {
@@ -94,19 +93,52 @@ const resources = {
           p3: 'The source code for this website is open source and available on my GitHub account, so feel free to take a look!',
         },
       },
-      aboutText: {
+      about: {
+        header: 'About',
         p1: "I'm Akbar Abdrakhmanov, a seasoned software engineer hailing from the picturesque city of Almaty, Kazakhstan. With a passion for crafting exceptional digital experiences, I've spent years honing my skills in the realm of web development, specializing in the art of frontend technologies.",
         p2: "My journey through the ever-evolving landscape of software engineering has seen me flourish on the frontend frontier, where I've become a master of React, Vue, and the intricate dance of JavaScript and TypeScript. But my expertise doesn't stop there – I've ventured into the realms of backend development, databases, and the intricate world of CI/CD.",
         p3: "As a remote contractor, I've had the privilege of collaborating with diverse teams and clients from around the globe, bringing innovation and efficiency to every project I touch. Whether it's creating captivating user interfaces or architecting robust backend systems, I thrive on transforming ideas into tangible digital realities.",
+      },
+      education: {
+        header: 'Education',
+        thesis: {
+          title: 'Graduation work title',
+          mcmaster: 'A Regression Test Selection Technique Applied to Legacy Systems',
+          narxoz: 'Usage of Enterprise Resource Planning Systems',
+          satbayev: 'Wi-Fi Nets: Vulnerabilities, Attacks and Ways of Their Protection',
+        },
+        description: {
+          mcmaster: {
+            p1: "After working for a few years as a developer at one of the leading banks in Kazakhstan, I reached a point where I desired to expand my knowledge and expertise in my field. This drove me to pursue a Master's degree.",
+            p2: "In Kazakhstan, an annual competition called 'Bolashak' offered a chance to secure a state scholarship for studying abroad. This scholarship covered all expenses, including tuition fees and living costs, along with a generous stipend. I applied for the scholarship, successfully navigated all the required exams, and secured a spot at McMaster University, one of Canada's premier technical universities.",
+            p3: 'This marked my inaugural journey abroad, and Canada proved to be the ideal destination where I spent two enriching years in pursuit of education. Fond memories continue to linger from that period, and I maintain contact with some remarkable individuals I met during my studies.',
+            p4: "An integral condition of the 'Bolashak' scholarship mandated returning to Kazakhstan and contributing five consecutive years of service to the country after graduation. Consequently, following my graduation in 2011, I returned to my homeland, fulfilling the scholarship's stipulation and legal requirement.",
+          },
+          narxoz: {
+            p1: "As I concluded my studies at Satbayev University, I was already deeply entrenched in my career at BTA Bank, a prominent financial institution in Kazakhstan. My trajectory within the bank was promising, and as I contemplated a long-term commitment to the financial industry, I recognized the value of acquiring a formal financial education. This rationale led me to pursue admission into Narxoz University, renowned for its excellence in economic disciplines. Over the span of two years, I engaged in distance learning, culminating in the attainment of my Bachelor's degree in Finance.",
+          },
+          satbayev: {
+            p1: 'Upon completing my studies with honors at the best physics-mathematics high school in Kazakhstan, I embarked on a path in the technical field. Fueled by my keen interest in computers, I decided to channel my aspirations into an IT specialty. During that period, a unique opportunity existed to secure a scholarship, granting the privilege of free education in any university across the country.',
+            p2: 'I deliberately chose a discipline with a limited number of scholarships and without a paid alternative. This ensured that only highly educated individuals would be drawn to it. Remarkably, I excelled in all the examinations and secured the top position with the highest score. Consequently, I secured admission to Satbayev University, a pivotal juncture that spanned five years, culminating in the attainment of a Specialist Engineer degree, designed to encompass both Bachelor and Master degrees.',
+          },
+        },
+        degree: {
+          masc: 'Master of Applied Science',
+          bachelor: 'Bachelor',
+          specialist: 'Specialist Engineer',
+        },
+        specialty: {
+          se: 'Software Engineering',
+          finance: 'Finance',
+          is: 'Organization and Technology of Information Security',
+        },
       },
     },
   },
   [Language.KZ]: {
     translation: {
-      about: 'Өзім туралы',
       projects: 'Жобалар',
       stack: 'Стэк',
-      education: 'Білім',
       cv: 'Резюме',
       noPage: 'Сіз ашайын деп тұрған парақша жоқ сияқты.',
       home: 'Бастапқы парақшаға қайтып оралу',
@@ -123,6 +155,7 @@ const resources = {
         ams: 'Амстердам, Нидерланд',
         ein: 'Эйндховен, Нидерланд',
         kz: 'Алматы, Қазақстан',
+        ca: 'Гамильтон, Канада',
       },
       description: {
         athenian: {
@@ -186,14 +219,49 @@ const resources = {
         welcome: 'Менің жеке вебсайтыма қош келдіңіз!',
         text: {
           p1: 'Бұл вэбсайт менің құзыретімнің ауқымын сипаттайтын код дүниеме және мұқият іріктелген бастамалар жинағыма терезе болып табылады. Өнерлік сезімімді айқындайтын жеке жобаларымнан бастап, техникалық шеберлігімді көрсететін кәсіпқой әріптестіктеріме дейін, мен сіздерді жұмыстарымның алаңына шақырамын.',
-          p2: 'Байланысамын немесе қызметтесемін немесе жай бағдарлама инженерлік ісіне қатысты қызықты мүмкіндіктерді талқылаймын десеңіз, менің хабарласуыңызды сұраймын. Кіріп шыққаныңыз үшін алғысымды білдіремін және сіз менің сандық дүниеме шолуды ұнатасыз деп үміттенемін.',
+          p2: 'Байланысамын немесе қызметтесемін немесе жай бағдарлама инженерлік ісіне қатысты қызықты мүмкіндіктерді талқылаймын десеңіз, менімен хабарласуыңызды сұраймын. Кіріп шыққаныңыз үшін алғысымды білдіремін және сіз менің сандық дүниеме шолуды ұнатасыз деп үміттенемін.',
           p3: 'Бұл вэбсайттың бастапқы коды ашық қолжетімділікте және ол менің Github тіркеулік жазбамда қолжетімді. Көргіңіз келсе, мархабат.',
         },
       },
-      aboutText: {
+      about: {
+        header: 'Өзім жайлы',
         p1: 'Менің есімім Әбдірахман Акбар, мен Қазақстанның көркем Алматы қаласында тұратын тәжірибелі бағадарламалар инженерімін. Мен вэб әзірлеу саласында, атап айтқанда фронтэнд бағытында, көптеген жылдар бойы білімімді ұштап келемін. Мен ерекше бірегей сандық өнімдерді құрастыруға қызығамын.',
         p2: 'Шексіз дами беретін бағдарламалар әзірлеу өрісінде мен фронтэнд саласында асқан жетістіктерге жетіп, React, Vue фрэймворктарының және де Javascript пен Typescript тілдерінің шебері болдым. Бірақ менің құзыретім бұнымен ғана шектелмей, бэкенд әзірлеу, дерекқорлар және күрделі CI/CD салаларын да меңгере білдім.',
         p3: 'Қашықтан мердігер ретінде мен дүние жүзі ауқымында әркелкі топтар мен клиенттермен жұмыс істедім. Істеген жобаларымның бәрінде де инновация мен нәтижелілік амалдарын қолдана білдім.',
+      },
+      education: {
+        header: 'Білім',
+        thesis: {
+          title: 'Дипломдық жұмыстың тақырыбы',
+          mcmaster: 'Ескі жүйелерге қолданылатын регрессиялық тестілерді іріктеу техникасы',
+          narxoz: 'Кәсіпорын қорларын жоспарлау жүйелерін қолдану',
+          satbayev: 'Wi-Fi жүйелері: осалдықтар, шабуылдар және олардан қорғану тәсілдері',
+        },
+        description: {
+          mcmaster: {
+            p1: 'Қазақстандағы озық банктердің бірінде бірнеше жыл жұмыс істеген соң, мен өз саламда білімім мен құзыретімді ұлғайтқым келді. Магистратураға түсуге бел будым.',
+            p2: 'Қазақстанда шетелдік университеттерде оқуға жол беретін "Болашақ" атты мемлекеттік грант ұтып алатын мүмкіндік болды. Ол шәкірттің оқу төлемін, тұру шығындарын толықтай өтеп, оған қоса жақсы шәкіртақы ұсынатын. Мен "Болашақ" бағдарламасына қатысып, керекті емтихандарынан сәтті өтіп, Канаданың озық техникалық университеттерінің бірі McMaster-ге түстім.',
+            p3: 'Бұл менің өмірімдегі шетелге бірінші сапарым еді, және ол жерде оқумен екі тамаша жыл өткіздім. Сол кезеңнен көптеген оңтайлы естеліктер қалды, ол жерде танысқан кейбір адамдармен әлі күнге дейін жақсы қарым-қатынастамын.',
+            p4: '"Болашақ" бағдарламасының міндетті шарттарының бірі оқу бітіргеннен кейін Қазақстанға оралып, бес жыл бойы жергілікті мекемелерде жұмыс істеп шығу болатын. Сәйкесінше, 2011 жылы оқу бітірген соң, мен бағдарламаның шарттары мен заңды талаптарын орындау үшін туған еліме қайтып келдім.',
+          },
+          narxoz: {
+            p1: 'Satbayev университетінде оқуды бітірерде, мен Қазақстанның әйгілі қаржы мекемесі БТА банкінде әжептәуір жұмыс атқарып үлгердім. Менің бүл мекемедегі мансабым айтарлықтай сәтті болғандықтан және мен ол жерде ұзақ уақыт жұмыс істеймін деп ойлағамдықтан, қаржы саласында да білім алсам артық болмас деп ойладым. Сол үшін өзінің экономика бағытымен кең танымал Narxoz университетіне оқуға түстім. Екі жыл сырттан оқып, қаржы саласында бакалавр дәрежесіне ие болдым.',
+          },
+          satbayev: {
+            p1: 'Қазақстандағы ең күшті физика-математикалық мектепті үздік бітірген соң, өзімнің мансабымды техникалық салада құрамын деп шештім. Компьютерлерге қызығушылығым зор болғандықтан, IT мамандығына түскім келді. Сол уақытта мемлекеттің кез келген университетінде тегін оқуға мүмкіндік болған.',
+            p2: 'Мен грант саны шектеулі және ақылы бөлімшесі жоқ болған мамандықты әдейі таңдадым. Оның себебі оған тек білім деңгейі жоғары адамдар түседі деген ой еді. Мен барлық емтихандардан жақсы өтіп, нәтижесінде тізімде ең жақсы нәтижемен бірінші болып шықтым. Содан соң Satbayev университетіне барлығы бес жылға созылған, бакалавр және магистр дәрежелерін біріктіретін инженер-маман дәрежесін иелену үшін оқуға түстім.',
+          },
+        },
+        degree: {
+          masc: 'Қолданбалы ғылым магистры',
+          bachelor: 'Бакалавр',
+          specialist: 'Инженер-маман',
+        },
+        specialty: {
+          se: 'Бағдарлама инженерлік ісі',
+          finance: 'Қаржы',
+          is: 'Ақпараттық қауіпсіздікті ұйымдастыру мен технологиясы',
+        },
       },
     },
   },

@@ -18,7 +18,7 @@ const HeaderOptions = () => {
         className={`${routes.about.path === location.pathname ? 'active' : ''} page-link`}
         href={routes.about.path}
       >
-        {t('about')}
+        {t('about.header')}
       </Link>
       <Link
         className={`${routes.projects.path === location.pathname ? 'active' : ''} page-link`}
@@ -36,7 +36,7 @@ const HeaderOptions = () => {
         className={`${routes.education.path === location.pathname ? 'active' : ''} page-link`}
         href={routes.education.path}
       >
-        {t('education')}
+        {t('education.header')}
       </Link>
       <Link className="page-link" href={config.urls.cv} download>
         {t('cv')}

@@ -9,18 +9,16 @@ export const projectStyles =
       margin-bottom: ${spacing.xl};
 
       .name {
-        align-items: center;
         color: ${color.text.primary};
-        display: flex;
         font-size: ${font.size.xl};
         font-weight: ${font.weight.lg};
         margin-bottom: ${spacing.sm};
-      }
 
-      .location {
-        color: ${color.text.secondary};
-        font-size: ${font.size.lg};
-        font-weight: ${font.weight.md};
+        .location {
+          color: ${color.text.secondary};
+          font-size: ${font.size.lg};
+          font-weight: ${font.weight.md};
+        }
       }
 
       .position {

@@ -10,6 +10,20 @@ const config = {
     logo: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691501582/portfolio/logo_pdoaez.png',
   },
   defaultLanguage: Language.EN,
+  monthsInKazakh: [
+    'Қантар',
+    'Ақпан',
+    'Наурыз',
+    'Сәуір',
+    'Мамыр',
+    'Маусым',
+    'Шілде',
+    'Тамыз',
+    'Қыркүйек',
+    'Қазан',
+    'Қараша',
+    'Желтоқсан',
+  ],
 };
 
 export default config;

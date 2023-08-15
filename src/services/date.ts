@@ -1,9 +1,15 @@
 import { Language } from '@shared-types/index';
 
-export const formatDate = (dateStr: string, language?: string): string => {
-  const locale = language === Language.KZ ? 'kk-KZ' : 'default';
+import config from '@config/index';
+
+export const formatDate = (dateStr: string, language: string, withoutMonth?: boolean): string => {
+  const isKazakh = language === Language.KZ;
   const date = new Date(dateStr);
-  const month = date.toLocaleString(locale, { month: 'short' });
+  const month = withoutMonth
+    ? null
+    : isKazakh
+    ? config.monthsInKazakh[date.getMonth()].slice(0, 3)
+    : date.toLocaleString('default', { month: 'short' });
   const year = date.getFullYear();
-  return `${month} ${year}`;
+  return month ? `${month} ${year}` : year.toString();
 };
