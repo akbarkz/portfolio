@@ -62,14 +62,22 @@ export const projectStyles =
         `}
 
         .description {
-          text-indent: ${spacing.xl};
+          color: ${color.text.primary};
+          font-size: ${font.size.lg};
+          font-weight: ${font.weight.md};
         }
 
-        .achievements-item {
-          margin-bottom: ${spacing.md};
+        .achievements {
+          color: ${color.text.primary};
+          font-size: ${font.size.lg};
+          font-weight: ${font.weight.md};
 
-          &:last-of-type {
-            margin-bottom: 0;
+          .achievements-item {
+            margin-bottom: ${spacing.md};
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
           }
         }
 

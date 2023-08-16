@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import { Col, Row, Typography } from 'antd';
 import Link from 'antd/es/typography/Link';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -7,6 +7,8 @@ import { education } from '@config/education';
 import { formatDate } from '@services/date';
 
 import { wrapperStyles } from './education.styles';
+
+const { Paragraph } = Typography;
 
 const Education = () => {
   const { t, i18n } = useTranslation();
@@ -50,11 +52,20 @@ const Education = () => {
                 )}
               </span>
             </div>
-            {edu.description?.map((descr) => (
-              <p className="description" key={descr}>
-                {t(descr)}
-              </p>
-            ))}
+            {edu.description && (
+              <Paragraph
+                className="description"
+                ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}
+              >
+                {edu.description.map((descr) => (
+                  <React.Fragment key={descr}>
+                    &emsp;&emsp;
+                    {t(descr)}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </Paragraph>
+            )}
           </Col>
         </Row>
       ))}
