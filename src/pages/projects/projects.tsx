@@ -1,4 +1,4 @@
-import { Carousel } from 'antd';
+import { Carousel, Typography } from 'antd';
 import Link from 'antd/es/typography/Link';
 import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -8,6 +8,8 @@ import { projects } from '@config/projects';
 import { formatDate } from '@services/date';
 
 import { projectStyles } from './projects.styles';
+
+const { Paragraph } = Typography;
 
 const Projects = () => {
   const { t, i18n } = useTranslation();
@@ -58,11 +60,20 @@ const Projects = () => {
           </div>
           <div className="project-details">
             <div>
-              <div className="description">
-                {project.description?.map((descr) => (
-                  <p key={descr}>{t(descr)}</p>
-                ))}
-              </div>
+              {project.description && (
+                <Paragraph
+                  className="description"
+                  ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}
+                >
+                  {project.description.map((descr) => (
+                    <React.Fragment key={descr}>
+                      &emsp;&emsp;
+                      {t(descr)}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </Paragraph>
+              )}
               {project.achievements && (
                 <div className="achievements">
                   {t('achievements.title')}:
