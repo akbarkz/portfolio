@@ -63,7 +63,7 @@ const Projects = () => {
               {project.description && (
                 <Paragraph
                   className="description"
-                  ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}
+                  ellipsis={{ rows: 2, expandable: true, symbol: t('more') }}
                 >
                   {project.description.map((descr) => (
                     <React.Fragment key={descr}>

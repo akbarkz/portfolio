@@ -14,6 +14,7 @@ const resources = {
       home: 'Back to Home page',
       underDevelopment: 'This page is currently under development...',
       footerText: 'Akbar Abdrakhmanov 2023',
+      more: 'more',
       position: {
         seniorLead: 'Senior Frontend Developer / Team Lead',
         senior: 'Senior Frontend Developer',
@@ -144,6 +145,7 @@ const resources = {
       home: 'Бастапқы парақшаға қайтып оралу',
       underDevelopment: 'Бұл парақша әлі әзірленуде...',
       footerText: 'Әбдірахман Акбар, 2023',
+      more: 'көбірек',
       position: {
         seniorLead: 'Аға фронтэнд әзірлеуші / Жетекші',
         senior: 'Аға фронтэнд әзірлеуші',
