@@ -8,6 +8,7 @@ const config = {
     email: 'mailto:kz.akbar@gmail.com',
     cv: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691913073/portfolio/Akbar_Abdrakhmanov_hpf55n.pdf',
     logo: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691501582/portfolio/logo_pdoaez.png',
+    404: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1692155819/portfolio/404_pfzlzu.png',
   },
   defaultLanguage: Language.EN,
   monthsInKazakh: [

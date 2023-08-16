@@ -7,3 +7,5 @@ I also used the following libraries:
 - [react-i18next](https://react.i18next.com/) - for internationalization since this website supports two languages: English and Kazakh.
 - [react-modal-image](https://github.com/aautio/react-modal-image) - to be able to enlarge some images.
 - [Husky](https://typicode.github.io/husky/) - to use pre-push scripts.
+
+The production version is deployed via [Netlify](https://www.netlify.com/) and can be viewed at: https://akbarkz.com/
