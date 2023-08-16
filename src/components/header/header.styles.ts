@@ -87,7 +87,7 @@ export const headerStyles =
     `;
 
 export const drawerHeaderStyles = {
-  padding: '4px 20px 0 16px',
+  padding: '6px 20px 0 12px',
 };
 
 export const closeIconStyles = ({ color, font }: ITheme) => css`
