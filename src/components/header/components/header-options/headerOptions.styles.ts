@@ -47,6 +47,7 @@ export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme
       position: absolute;
       top: 0;
       transition: transform 0.3s ease;
+      -webkit-transition: transform 0.3s ease;
       transform: scaleX(0);
       transform-origin: bottom right;
       z-index: -1;
