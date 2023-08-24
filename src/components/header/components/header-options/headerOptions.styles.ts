@@ -19,6 +19,7 @@ export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme
     font-size: ${font.size.xl};
     margin-bottom: ${spacing.md};
     margin-right: 0;
+    position: relative;
 
     ${breakpoint.md &&
     `
@@ -26,12 +27,34 @@ export const headerOptionsStyles = ({ breakpoint, color, font, spacing }: ITheme
       margin-right: ${spacing.md};
     `}
 
-    &:hover {
-      color: ${color.text.secondary};
-    }
-
     &.active {
       color: ${color.text.highlighted};
+    }
+
+    &:hover {
+      color: ${color.ui.white};
+    }
+
+    &::before {
+      background: ${color.text.highlighted};
+      border-radius: 4px;
+      bottom: 0;
+      content: ' ';
+      display: block;
+      inset: 0 0 0 0;
+      left: -${spacing.xs};
+      right: -${spacing.xs};
+      position: absolute;
+      top: 0;
+      transition: transform 0.3s ease;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
   }
 `;

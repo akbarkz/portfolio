@@ -18,6 +18,9 @@ export interface IColor {
     secondary: string;
     highlighted: string;
   };
+  ui: {
+    [key: string]: string;
+  };
 }
 
 export interface IUniversalStyle {
@@ -30,6 +33,7 @@ export interface IUniversalStyle {
 }
 
 export interface IFont {
+  family: string;
   size: IUniversalStyle;
   weight: IUniversalStyle;
 }

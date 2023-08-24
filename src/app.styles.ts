@@ -7,26 +7,12 @@ export const appStyles = css`
   margin: 0 auto;
 `;
 
-export const globalStyles = ({ color }: ITheme) => css`
+export const globalStyles = ({ font }: ITheme) => css`
   body {
     margin: 0;
   }
 
   * {
-    font-family: sans-serif;
-
-    a {
-      &:not(:visited) {
-        color: ${color.text.primary} !important;
-      }
-
-      &:hover {
-        color: ${color.text.secondary} !important;
-      }
-
-      &:visited {
-        color: initial;
-      }
-    }
+    font-family: ${font.family};
   }
 `;

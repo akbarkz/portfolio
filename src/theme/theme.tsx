@@ -16,6 +16,7 @@ const Theme = ({ children }: IThemeProps) => {
     breakpoint: screens,
     color: colors,
     font: {
+      family: 'sans-serif',
       size: fontsSizes,
       weight: fontWeights,
     },
