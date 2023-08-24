@@ -6,4 +6,7 @@ export const colors: IColor = {
     secondary: '#888',
     highlighted: '#FFA500',
   },
+  ui: {
+    white: '#FFF',
+  },
 };

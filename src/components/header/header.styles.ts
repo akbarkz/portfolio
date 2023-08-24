@@ -19,6 +19,7 @@ export const headerStyles =
       position: sticky;
       top: 0;
       transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       z-index: 10;
 
       ${scrollDirection === Direction.DOWN &&

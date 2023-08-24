@@ -61,7 +61,16 @@ export const wrapperStyles = ({ breakpoint, color, font, spacing }: ITheme) => c
 
   .description {
     color: ${color.text.primary};
+    font-family: ${font.family};
     font-size: ${font.size.lg};
     font-weight: ${font.weight.md};
+
+    a {
+      color: ${color.text.primary};
+
+      &:hover {
+        color: ${color.text.secondary};
+      }
+    }
   }
 `;

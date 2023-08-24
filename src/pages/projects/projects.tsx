@@ -67,7 +67,7 @@ const Projects = () => {
                 >
                   {project.description.map((descr) => (
                     <React.Fragment key={descr}>
-                      &emsp;&emsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       {t(descr)}
                       <br />
                     </React.Fragment>
