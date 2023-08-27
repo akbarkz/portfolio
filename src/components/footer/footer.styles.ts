@@ -19,5 +19,5 @@ export const footerStyles = ({ breakpoint, font, spacing }: ITheme) => css`
 `;
 
 export const dividerStyles = css`
-  margin-bottom: 0;
+  margin: 0;
 `;

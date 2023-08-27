@@ -12,6 +12,13 @@ export const globalStyles = ({ font }: ITheme) => css`
     margin: 0;
   }
 
+  html,
+  body,
+  #root,
+  #root > div {
+    height: 100%;
+  }
+
   * {
     font-family: ${font.family};
   }

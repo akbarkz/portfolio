@@ -8,7 +8,7 @@ export const headerStyles =
   (scrollDirection: Direction) =>
   ({ breakpoint, color, font, spacing }: ITheme) =>
     css`
-      background-color: white;
+      background-color: ${color.ui.white};
       color: ${color.text.primary};
       font-size: ${font.size.lg};
       font-weight: ${font.weight.md};
