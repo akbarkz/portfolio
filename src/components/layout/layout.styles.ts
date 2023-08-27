@@ -3,7 +3,6 @@ import { css } from '@emotion/react';
 import { ITheme } from '@theme/theme.types';
 
 export const layoutStyles = css`
-  height: 100%;
   min-height: 100%;
 `;
 

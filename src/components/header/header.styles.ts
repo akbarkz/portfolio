@@ -17,13 +17,12 @@ export const headerStyles =
       padding-left: ${spacing.lg};
       padding-right: ${spacing.lg};
       position: sticky;
-      top: 0;
       transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
       z-index: 10;
 
-      ${scrollDirection === Direction.DOWN &&
-      `
+      ${scrollDirection === Direction.DOWN
+        ? `
         top: -50px;
 
         ${
@@ -32,7 +31,8 @@ export const headerStyles =
           top: -64px;
         `
         }
-      `}
+      `
+        : 'top: 0;'}
 
       .logo {
         display: none;
