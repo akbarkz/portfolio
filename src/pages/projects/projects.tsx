@@ -4,6 +4,7 @@ import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Lightbox } from 'react-modal-image';
 
+import { LazyImage } from '@components/lazy-image';
 import { projects } from '@config/projects';
 import { formatDate } from '@services/date';
 
@@ -89,13 +90,12 @@ const Projects = () => {
             </div>
             {project.images && (
               <Carousel autoplay className="carousel">
-                {project.images.map((image) => (
-                  <img
-                    alt="Project screenshot"
-                    className="carousel-image"
+                {project.images.map((image, index) => (
+                  <LazyImage
                     key={image}
-                    src={image}
-                    onClick={handleImageClick(image)}
+                    image={image}
+                    smallImage={project.smallImages?.[index]}
+                    onClick={handleImageClick}
                   />
                 ))}
               </Carousel>

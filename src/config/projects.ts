@@ -40,6 +40,11 @@ export const projects: IProject[] = [
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691226050/portfolio/project_screens/athenian/2-min_vsv5s4.png',
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691226050/portfolio/project_screens/athenian/3-min_boo56u.png',
     ],
+    smallImages: [
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693194671/portfolio/project_screens/athenian/1-min-small_gmd0bz.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693194672/portfolio/project_screens/athenian/2-min-small_qaspce.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693194671/portfolio/project_screens/athenian/3-min-small_n8jzzf.png',
+    ],
   },
   {
     name: 'LuggageCare BV',
@@ -76,6 +81,12 @@ export const projects: IProject[] = [
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691327151/portfolio/project_screens/luggo/3-min_hj3yxo.png',
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691327151/portfolio/project_screens/luggo/4-min_vnuqhx.png',
     ],
+    smallImages: [
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197453/portfolio/project_screens/luggo/1-min-small_qeb64e.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197452/portfolio/project_screens/luggo/2-min-small_gi6jd2.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197453/portfolio/project_screens/luggo/3-min-small_pp1mu9.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197453/portfolio/project_screens/luggo/4-min-small_hszjzb.png',
+    ],
   },
   {
     name: 'Frontmen BV (Jumbo Supermarkten BV)',
@@ -105,6 +116,11 @@ export const projects: IProject[] = [
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691473185/portfolio/project_screens/jumbo/1-min_qmzz7z.png',
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691473184/portfolio/project_screens/jumbo/2-min_vrins6.png',
       'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691473185/portfolio/project_screens/jumbo/3-min_qopiqe.png',
+    ],
+    smallImages: [
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197697/portfolio/project_screens/jumbo/1-min-small_ubleky.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197697/portfolio/project_screens/jumbo/2-min-small_um4izy.png',
+      'https://res.cloudinary.com/dlyw63h5s/image/upload/v1693197697/portfolio/project_screens/jumbo/3-min-small_djvaq5.png',
     ],
   },
   {

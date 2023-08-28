@@ -118,12 +118,6 @@ export const projectStyles =
           .slick-dots li.slick-active button {
             background-color: ${color.text.primary};
           }
-
-          &-image {
-            cursor: pointer;
-            max-height: 100%;
-            max-width: 100%;
-          }
         }
       }
     `;
