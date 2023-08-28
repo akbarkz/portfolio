@@ -20,6 +20,7 @@ export interface IProject {
   location: string;
   link: string;
   images?: string[];
+  smallImages?: string[];
 }
 
 export interface IEducation {
