@@ -27,12 +27,6 @@ const HeaderOptions = () => {
         {t('projects')}
       </Link>
       <Link
-        className={`${routes.stack.path === location.pathname ? 'active' : ''} page-link`}
-        href={routes.stack.path}
-      >
-        {t('stack')}
-      </Link>
-      <Link
         className={`${routes.education.path === location.pathname ? 'active' : ''} page-link`}
         href={routes.education.path}
       >
