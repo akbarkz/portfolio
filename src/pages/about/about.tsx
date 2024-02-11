@@ -11,6 +11,7 @@ const About = () => {
       <p>{t('about.p1')}</p>
       <p>{t('about.p2')}</p>
       <p>{t('about.p3')}</p>
+      <p>{t('about.p4')}</p>
     </div>
   );
 };
