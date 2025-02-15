@@ -1,5 +1,5 @@
-node_modules
-dist
+client/node_modules
+client/dist
 .git
 .cache
 .DS_Store
