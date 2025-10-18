@@ -31,7 +31,7 @@ const Header = () => {
     <>
       <AntHeader css={headerStyles(scrollDirection)}>
         <Row>
-          <Col xs={12} sm={14} md={0}>
+          <Col xs={6} sm={14} md={0}>
             <MenuOutlined className="sandwich-button" onClick={openDrawer} />
           </Col>
           <Col className="logo" hidden md={2}>
@@ -40,7 +40,7 @@ const Header = () => {
           <Col hidden md={15}>
             <HeaderOptions />
           </Col>
-          <Col xs={12} sm={10} md={7} className="external-links">
+          <Col xs={18} sm={10} md={7} className="external-links">
             <Link href={config.urls.github} target="_blank" title="Github" className="link-icon">
               <GithubOutlined />
             </Link>
