@@ -95,7 +95,7 @@ const resources = {
         },
       },
       about: {
-        header: 'About',
+        header: 'About me',
         p1: "I'm Akbar Abdrakhmanov, a software engineer from Almaty, Kazakhstan 🇰🇿. I love building awesome digital experiences, and for years I've been sharpening my skills in web development, especially when it comes to frontend stuff.",
         p2: "The world of software engineering is always changing, but I've found my sweet spot on the frontend side. I'm a master of React, Vue, together with JavaScript and TypeScript. But my bag of skills doesn't stop there – I've also dabbled in backend development, databases, and the world of CI/CD.",
         p3: "As a remote contractor, I've had the awesome chance to work with different teams and clients all over the world. In every project that I touched I brought innovation and efficiency methods.",

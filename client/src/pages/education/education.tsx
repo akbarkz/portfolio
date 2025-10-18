@@ -58,11 +58,7 @@ const Education = () => {
                 ellipsis={{ rows: 2, expandable: true, symbol: t('more') }}
               >
                 {edu.description.map((descr) => (
-                  <React.Fragment key={descr}>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {t(descr)}
-                    <br />
-                  </React.Fragment>
+                  <React.Fragment key={descr}>{t(descr)}</React.Fragment>
                 ))}
               </Paragraph>
             )}
