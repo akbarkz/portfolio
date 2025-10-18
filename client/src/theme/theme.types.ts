@@ -30,6 +30,8 @@ export interface IUniversalStyle {
   lg: string;
   xl?: string;
   xxl?: string;
+  xxxl?: string;
+  xxxxl?: string;
 }
 
 export interface IFont {

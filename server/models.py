@@ -15,6 +15,7 @@ class Section(db.Model):
     page_id = db.Column(db.Integer, db.ForeignKey('page.id'), nullable=False)
     codename = db.Column(db.String(255), nullable=False)
     title = db.Column(db.String(255), nullable=False)
+    order = db.Column(db.Integer)
     contents = db.relationship('Content', backref='section', lazy=True)
 
 
@@ -25,10 +26,12 @@ class Content(db.Model):
     codename = db.Column(db.String(255), nullable=False)
     language = db.Column(db.String(10), nullable=False)
     text = db.Column(db.Text, nullable=False)
+    order = db.Column(db.Integer)
     __table_args__ = (
         db.UniqueConstraint(
             'section_id',
             'codename',
+            'order',
             'language',
             name='_section_codename_language_uc'
         ),

@@ -8,6 +8,7 @@ const About = () => {
 
   return (
     <div css={wrapperStyles}>
+      <h1>{t('about.header')}</h1>
       <p>{t('about.p1')}</p>
       <p>{t('about.p2')}</p>
       <p>{t('about.p3')}</p>

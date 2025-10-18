@@ -66,16 +66,23 @@ export const headerStyles =
         text-align: right;
 
         .link-icon {
-          color: ${color.text.primary};
+          color: ${color.text.secondary};
           font-size: ${font.size.xl};
           margin-right: ${spacing.md};
+          padding: ${spacing.sm};
+          border-radius: ${spacing.sm};
+          transition: all 0.2s ease;
+          display: inline-block;
+          vertical-align: middle;
 
           &:last-of-type {
             margin-right: 0;
           }
 
           &:hover {
-            color: ${color.text.secondary};
+            color: ${color.text.highlighted};
+            background-color: ${color.ui.accentLight};
+            transform: translateY(-1px);
           }
 
           ${breakpoint.sm &&

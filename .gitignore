@@ -3,3 +3,9 @@ client/dist
 .git
 .cache
 .DS_Store
+
+server/__pycache__
+server/*.pyc
+server/.venv
+
+node_modules

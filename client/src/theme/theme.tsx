@@ -16,7 +16,8 @@ const Theme = ({ children }: IThemeProps) => {
     breakpoint: screens,
     color: colors,
     font: {
-      family: 'sans-serif',
+      family:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
       size: fontsSizes,
       weight: fontWeights,
     },
