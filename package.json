@@ -11,7 +11,7 @@
     "start:client": "cd client && yarn start",
     "start:server": "cd server && flask --app app run",
     "start": "concurrently \"yarn start:client\" \"yarn start:server\"",
-    "build:client": "cd client && yarn build",
+    "build:client": "cd client && yarn && yarn build",
     "client:compile": "cd client && yarn compile",
     "client:lint": "cd client && yarn lint",
     "prepare": "husky install"
