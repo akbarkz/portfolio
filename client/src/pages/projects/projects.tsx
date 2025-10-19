@@ -38,7 +38,7 @@ const Projects = () => {
           <div className="position">{t(project.position)}</div>
           <div className="dates">
             {`${formatDate(project.dateStart, i18n.language)} -
-            ${formatDate(project.dateEnd, i18n.language)}`}
+            ${project.dateEnd ? formatDate(project.dateEnd, i18n.language) : t('current')}`}
           </div>
           <div className="link">
             <Link href={project.link} rel="noreferrer" target="_blank">

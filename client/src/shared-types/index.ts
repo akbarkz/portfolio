@@ -12,7 +12,7 @@ export interface IStack {
 export interface IProject {
   name: string;
   dateStart: string;
-  dateEnd: string;
+  dateEnd?: string;
   description?: string[];
   achievements?: string[];
   stack: IStack[];

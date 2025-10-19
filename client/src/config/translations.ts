@@ -15,11 +15,13 @@ const resources = {
       underDevelopment: 'This page is currently under development...',
       footerText: 'Akbar Abdrakhmanov 2023',
       more: 'more',
+      current: 'Current',
       position: {
         seniorLead: 'Senior Frontend Developer / Team Lead',
         senior: 'Senior Frontend Developer',
         core: 'Core Fullstack Contributor',
         be: 'Senior Backend Developer',
+        manager: 'Engineering Manager',
       },
       location: {
         fr: 'Paris, France',
@@ -27,8 +29,13 @@ const resources = {
         ein: 'Eindhoven, Netherlands',
         kz: 'Almaty, Kazakhstan',
         ca: 'Hamilton, Canada',
+        uk: 'London, United Kingdom',
       },
       description: {
+        canonical: {
+          p1: 'Canonical is a very prominent company, especially among software engineers. They are the creators and maintainers of Ubuntu, one of the most popular Linux distributions in the world.',
+          p2: "I joined Canonical as an Engineering Manager, leading a team of developers working on developing and maintaining the company's websites, such as ubuntu.com, canonical.com and other related web applications.",
+        },
         athenian: {
           p1: 'Athenian, a French startup, specialized in offering engineering metrics to engineering leaders. This B2B business developed a SaaS product and was established in late 2019. By May 2023, it had amassed a customer base of over 40 active clients.',
           p2: 'I joined Athenian as the sole Frontend Developer and took ownership of the entire frontend codebase for the web application. After a year, the company underwent another round of investment and expanded, leading to my promotion to the position of Team Lead. During this time, I conducted numerous interviews and had the privilege of hiring several exceptional talents. The team under my leadership was known as the Application Team, tasked with the responsibility of developing all customer-facing applications.',
@@ -59,6 +66,12 @@ const resources = {
       },
       achievements: {
         title: 'Some of my achievements',
+        canonical: {
+          p1: 'Introduced a single streamlined workflow for incoming tasks, replacing scattered channels like email, chat, and Google Docs.',
+          p2: 'Took ownership of the backlog and implemented a clear, unified prioritization process understood by all stakeholders.',
+          p3: 'Built a high-performing team by raising standards, restructuring membership, and hiring strong, self-driven developers.',
+          p4: 'Initiated and led the Content System project — a new platform enabling stakeholders to update website content without developer involvement, already adopted across the business.',
+        },
         athenian: {
           p1: 'Introduced best practices to the project and performed extensive refactoring of legacy code, resulting in significantly improved readability and maintainability.',
           p2: "Spearheaded the implementation of a new product named Align, which not only boosted sales but also significantly enhanced the company's profitability.",
@@ -147,11 +160,13 @@ const resources = {
       underDevelopment: 'Бұл парақша әлі әзірленуде...',
       footerText: 'Әбдірахман Акбар, 2023',
       more: 'көбірек',
+      current: 'Ағымдағы',
       position: {
         seniorLead: 'Аға фронтэнд әзірлеуші / Жетекші',
         senior: 'Аға фронтэнд әзірлеуші',
         core: 'Негізгі толық стэк әзірлеуші',
         be: 'Аға бэкэнд әзірлеуші',
+        manager: 'Инженерлік жетекші',
       },
       location: {
         fr: 'Париж, Франция',
@@ -159,8 +174,13 @@ const resources = {
         ein: 'Эйндховен, Нидерланд',
         kz: 'Алматы, Қазақстан',
         ca: 'Гамильтон, Канада',
+        uk: 'Лондон, Ұлыбритания',
       },
       description: {
+        canonical: {
+          p1: 'Canonical - өте танымал компания, әсіресе бағдарламалық жасақтама инженерлері арасында. Ол әлемдегі ең танымал Linux дистрибутиві болып табылатын Ubuntu-ның әзірлеушісі және қолдаушысы.',
+          p2: 'Мен Canonical компаниясына инженерлік жетекші ретінде жұмысқа кіріп, ubuntu.com, canonical.com және басқа да байланысты веб-қолданбаларды әзірлеу және қолдаумен айналысатын әзірлеушілер тобын басқарып жүрмін.',
+        },
         athenian: {
           p1: 'Athenian инженерлік жетекшілерге инженерлік көрсеткіштерді жеткізетін француз стартапы еді. Ол басқа мекемелерге бағдарламалық жасақтама қызметін (SaaS) ұсынған болатын. Мекеме 2019 жылдың соңында ашылып, 2023 жылдың мамыр айында оның 40-қа жуық клиенттері болған.',
           p2: 'Мен Athenian-ға жалғыз фронтэнд әзірлеушісі ретінде қосылып, вэб қолданбаның бүкіл фронтэнд кодының иесі болдым. Бір жылдан соң мекеме келесі инвестиция кезеңінен өтіп, өсе бастады. Сол кезде мен жетекші лауазымына ие болдым. Көптеген кандидаттармен тілдесу өткізіп, бірнеше дарынды әзірлеушілерді жұмысқа алдым. Менің тобым Қолданбалар тобы деп аталды және біз мекеменің барлық клиенттерге бағытталған қолданбаларына жауап бердік.',
@@ -191,6 +211,12 @@ const resources = {
       },
       achievements: {
         title: 'Кейбір жетістіктерім',
+        canonical: {
+          p1: 'Электрондық пошта, чат және Google Docs сияқты арналар арқылы шашыраңқы келіп түсетін тапсырмалар үшін біртұтас оңтайландырылған жұмыс үрдісін енгіздім.',
+          p2: 'Жүктемені (backlog) өз бақылауыма алып, барлық мүдделі тараптар түсінетін айқын, бірыңғай басымдық беру үрдісін жүзеге асырдым.',
+          p3: 'Стандарттарды басым қылу, команда құрамын қайта құру және мықты, өзін-өзі жетілдіретін әзірлеушілерді жұмысқа алу арқылы жоғары өнімді команда құрдым.',
+          p4: 'Мүдделі тараптарға әзірлеушілердің қатысуынсыз веб-сайт мазмұнын жаңартуға мүмкіндік беретін жаңа платформа — Content System жобасын бастадым және басқардым. Қазіргі таңда бұл платформа бизнесте кеңінен қолданылып, пайдасын әкелуде.',
+        },
         athenian: {
           p1: 'Жобаға ең үздік әдістерді әкелу және ескі кодтың біразын өзгерту арқылы оқуды және қолдау көрсетуді әлдеқайда оңайырақ еттім.',
           p2: 'Align атты жаңа өнімді әзірлеп, мекеменің сату деңгейін және табысын ұлғайттым.',

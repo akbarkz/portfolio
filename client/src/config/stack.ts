@@ -9,6 +9,11 @@ export const stack = {
     icon: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691038394/portfolio/stack_icons/redux_e9rvsz.png',
     link: 'https://redux.js.org/',
   },
+  zustand: {
+    name: 'Zustand',
+    icon: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1760895667/portfolio/stack_icons/zustand_bklf0v.jpg',
+    link: 'https://zustand-demo.pmnd.rs/',
+  },
   vue: {
     name: 'Vue',
     icon: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691038396/portfolio/stack_icons/vue_uobick.png',
@@ -118,6 +123,11 @@ export const stack = {
     name: 'Cypress',
     icon: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1691038392/portfolio/stack_icons/cypress_yc9ley.png',
     link: 'https://www.cypress.io/',
+  },
+  playwright: {
+    name: 'Playwright',
+    icon: 'https://res.cloudinary.com/dlyw63h5s/image/upload/v1760895149/portfolio/stack_icons/playwright_kdghqa.png',
+    link: 'https://playwright.dev/',
   },
   rtl: {
     name: 'React Testing Library',
