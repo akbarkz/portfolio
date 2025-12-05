@@ -1,0 +1,49 @@
+name: Backup MongoDB
+
+on:
+  schedule:
+    # Run every day at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+      
+      - name: Install MongoDB tools
+        run: |
+          wget -qO- https://www.mongodb.org/static/pgp/server-8.0.asc | sudo tee /etc/apt/trusted.gpg.d/mongodb.asc
+          echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/8.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+          sudo apt-get update
+          sudo apt-get install -y mongodb-database-tools
+      
+      - name: Create backup
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: |
+          # Create backup directory with timestamp
+          BACKUP_DIR="backups/$(date +%Y-%m-%d_%H-%M-%S)"
+          mkdir -p "$BACKUP_DIR"
+          
+          # Dump MongoDB to JSON
+          mongodump --uri="$MONGODB_URI" --out="$BACKUP_DIR/dump"
+          
+          # Export translations collection to JSON for easy viewing
+          mongoexport --uri="$MONGODB_URI" --db=portfolio --collection=translations --out="$BACKUP_DIR/translations.json" --jsonArray --pretty
+          
+          # Keep only last 3 backups
+          ls -tp backups/ | grep -v '/$' | tail -n +4 | xargs -I {} rm -rf backups/{}
+      
+      - name: Commit and push backup
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add backups/
+          git commit -m "chore: automated MongoDB backup $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git push origin develop
