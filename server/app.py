@@ -4,7 +4,15 @@ from pymongo import MongoClient
 import os
 
 app = Flask(__name__)
-CORS(app)
+
+# CORS configuration - restrict to allowed origins
+allowed_origins = [
+    'http://localhost',  # Local Docker frontend
+    'http://localhost:80',
+    'http://localhost:3000',  # Local Vite dev server
+    'https://akbarkz.com',  # Production frontend
+]
+CORS(app, origins=allowed_origins)
 
 # MongoDB configuration - use environment variable or default to localhost
 MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/')
