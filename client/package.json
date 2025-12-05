@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "author": {
+    "name": "Akbar Abdrakhmanov",
+    "email": "kz.akbar@gmail.com"
+  },
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "5.1.4",
