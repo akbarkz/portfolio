@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:8.0
+    container_name: portfolio-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-password}
+      MONGO_INITDB_DATABASE: portfolio
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - portfolio-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/portfolio --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Flask Backend
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: portfolio-backend
+    restart: unless-stopped
+    environment:
+      MONGODB_URI: mongodb://${MONGO_ROOT_USERNAME:-admin}:${MONGO_ROOT_PASSWORD:-password}@mongodb:27017/portfolio?authSource=admin
+      FLASK_ENV: ${FLASK_ENV:-production}
+    ports:
+      - "5001:5000"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - portfolio-network
+    volumes:
+      - ./server:/app
+    command: python app.py
+
+  # React Frontend
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: portfolio-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - portfolio-network
+    environment:
+      VITE_API_URL: ${VITE_API_URL:-http://localhost:5000}
+
+networks:
+  portfolio-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local

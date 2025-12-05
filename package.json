@@ -14,6 +14,14 @@
     "build:client": "cd client && yarn && yarn build",
     "client:compile": "cd client && yarn compile",
     "client:lint": "cd client && yarn lint",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:migrate": "docker-compose exec backend python migrate_data.py",
+    "docker:backup": "docker-compose exec mongodb mongodump --out=/data/backup --db=portfolio",
+    "docker:restart": "docker-compose restart",
+    "docker:clean": "docker-compose down -v",
     "prepare": "husky install"
   }
 }
