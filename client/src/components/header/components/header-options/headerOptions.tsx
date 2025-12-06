@@ -1,7 +1,6 @@
-import Link from 'antd/es/typography/Link';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import config from '@config/index';
 import { routes } from '@router';
@@ -16,25 +15,25 @@ const HeaderOptions = () => {
     <div css={headerOptionsStyles}>
       <Link
         className={`${routes.about.path === location.pathname ? 'active' : ''} page-link`}
-        href={routes.about.path}
+        to={routes.about.path}
       >
         {t('about.header')}
       </Link>
       <Link
         className={`${routes.projects.path === location.pathname ? 'active' : ''} page-link`}
-        href={routes.projects.path}
+        to={routes.projects.path}
       >
         {t('projects')}
       </Link>
       <Link
         className={`${routes.education.path === location.pathname ? 'active' : ''} page-link`}
-        href={routes.education.path}
+        to={routes.education.path}
       >
         {t('education.header')}
       </Link>
-      <Link className="page-link" href={config.urls.cv} download>
+      <a className="page-link" href={config.urls.cv} download>
         {t('cv')}
-      </Link>
+      </a>
     </div>
   );
 };
