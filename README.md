@@ -35,12 +35,17 @@ yarn docker:build
 yarn docker:up
 ```
 
+The app will be available at `http://localhost` (port 80).
+
 3. Run the data migration (first time only):
 ```bash
 yarn docker:migrate
 ```
 
-The app will be available at `http://localhost` (port 80).
+To use hot-reloading of the frontend run the following command which will run the app at `http://localhost:3000`:
+```
+yarn start:client
+```
 
 > **Note**: Local environment variables are already configured in the `.env` file with sensible defaults for Docker development.
 

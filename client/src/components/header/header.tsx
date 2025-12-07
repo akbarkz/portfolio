@@ -69,7 +69,7 @@ const Header = () => {
         onClose={closeDrawer}
         extra={<Logo closeDrawer={closeDrawer} />}
       >
-        <HeaderOptions />
+        <HeaderOptions onClick={closeDrawer} />
       </Drawer>
     </>
   );
