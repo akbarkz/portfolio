@@ -1,7 +1,7 @@
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
+import { ReactElement } from 'react';
 
 export interface IThemeProps {
-  children: ReactJSXElement;
+  children: ReactElement;
 }
 
 interface IBreakpoint {
