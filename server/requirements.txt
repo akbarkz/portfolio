@@ -6,4 +6,4 @@ gunicorn==23.0.0
 itsdangerous==2.2.0
 pymongo==4.10.1
 typing_extensions==4.12.2
-Werkzeug==3.1.4
+Werkzeug==3.1.5
